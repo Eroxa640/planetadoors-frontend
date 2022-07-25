@@ -14,6 +14,27 @@ a
   box-sizing: border-box
   list-style: none
 
+.container
+  width: calc( 100% - 50px )
+  margin: 0 auto
+
+@media screen and (min-width: 600px)
+  .container
+    width: calc( 100% - 70px )
+    margin: 0 auto
+@media screen and (min-width: 900px)
+  .container
+    width: calc( 100% - 100px )
+@media screen and (min-width: 1200px)
+  .container
+    width: calc( 100% - 120px )
+@media screen and (min-width: 1500px)
+  .container
+    width: calc( 100% - 150px )
+@media screen and (min-width: 1900px)
+  .container
+    width: calc( 100% - 200px )
+
 textarea:focus, input:focus
   outline: none
 
@@ -190,3 +211,5 @@ input::-webkit-inner-spin-button
   src: local(""), url('../fonts/raleway-v27-latin_cyrillic-900.eot?#iefix') format("embedded-opentype"), url('../fonts/raleway-v27-latin_cyrillic-900.woff2') format("woff2"), url('../fonts/raleway-v27-latin_cyrillic-900.woff') format("woff"), url('../fonts/raleway-v27-latin_cyrillic-900.ttf') format("truetype"), url('../fonts/raleway-v27-latin_cyrillic-900.svg#Raleway') format("svg")
 
   /* Legacy iOS
+
+//media

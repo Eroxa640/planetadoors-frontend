@@ -1,29 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Navbar.module.sass";
 import { Fade as Hamburger } from "hamburger-react";
+import Link from "next/Link";
+import cn from "classnames";
 
 export default function Navbar() {
+  //state
+  const [isOpen, setOpen] = useState(false);
   return (
     <>
-      <div class={styles.line}>Более 300 моделей в наличии</div>
-      <header class={styles.navbar}>
-        <div class={styles.container}>
-          <div class={styles.logo}>
-            <img src="../images/PLANETA_DOORS.png" alt="Planeta_Doors" />
+      <div className={styles.line}>Более 300 моделей в наличии</div>
+      <header className={styles.navbar}>
+        <div className={`container ${styles.nav__container}`}>
+          <div className={styles.logo}>
+            <img src="/images/PLANETA_DOORS.png" alt="Planeta_Doors" />
           </div>
-          <nav class={styles.nav}>
-            <div class={styles.nav__list}>
-              <a class={styles.nav__link} href="">
-                Товары
-              </a>
-              <a class={styles.nav__link} href="">
-                Контакты
-              </a>
-              <a class={styles.nav__link} href="">
-                О нас
-              </a>
+          <nav
+            className={cn(styles.nav, {
+              [styles.visible]: isOpen,
+            })}
+          >
+            <div className={styles.nav__list}>
+              <Link href="/">
+                <a className={styles.nav__link}>Товары</a>
+              </Link>
+              <Link href="/">
+                <a className={styles.nav__link}>Контакты</a>
+              </Link>
+              <Link href="/">
+                <a className={styles.nav__link}>О нас</a>
+              </Link>
             </div>
-            <a class={styles.contact}>+996 (505) 840 840</a>
+            <a className={styles.contact}>+996 (505) 840 840</a>
           </nav>
           <div className={styles.hamburger}>
             <Hamburger

@@ -13,7 +13,7 @@
   top: 0
   left: 0
   background-color: #fff
-.container
+.nav__container
   position: relative
   min-height: 80px
   display: flex
@@ -37,7 +37,7 @@
   background-color: #fff
   transition: .3s
   z-index: -1
-.nav.navActive
+.nav.visible
   transform: translateY(100%)
   opacity: 1
 .nav__list
@@ -54,7 +54,7 @@
   font-weight: 400
   color: #000
 @media screen and (min-width: 900px)
-  .container
+  .nav__container
     min-height: 100px
   .hamburger
     display: none
@@ -75,7 +75,7 @@
   .logo
     max-width: 140px
 @media screen and (min-width: 1200px)
-  .container
+  .nav__container
     min-height: 110px
   .logo
     max-width: 160px
