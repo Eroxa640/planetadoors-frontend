@@ -1,4 +1,5 @@
 import Layout from "../components/Layout/Layout";
+import "normalize.css/normalize.css";
 import "../styles/globals.sass";
 
 function MyApp({ Component, pageProps }) {
@@ -8,5 +9,4 @@ function MyApp({ Component, pageProps }) {
     </Layout>
   );
 }
-
 export default MyApp;
