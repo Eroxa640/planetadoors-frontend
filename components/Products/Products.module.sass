@@ -18,15 +18,56 @@
 .door__image
   width: 514px
   height: 486px
-  background-color: #FFED00
   img
-    max-width: 100%
+    width: 100%
     height: 100%
-    padding: 20px
+    padding: 20px 10px
     justify-content: center
+.door
+  background-color: #FFED00
+  width: 514px
+  height: 486px
+  transition: .4s
+  display: flex
+  &:hover
+    background-color: rgba(217, 217, 217, 0.5)
+.doorInfo
+  padding: 30px 20px
 .doors
   display: grid
   grid-template-columns: repeat(3, 1fr)
-  max-width: 1920px
-  margin: 0 auto
+  max-width: 1690px
+  margin: 45px auto
   gap: 62px
+.flex
+  padding-top: 26px
+.doors__title
+  font-family: "Source Sans Pro", sans-serif
+  font-weight: 400
+  font-size: 26px
+  line-height: 33px
+  border: none
+  background-color: transparent
+  border-bottom: 1px solid #ffed00
+  display: flex
+  justify-content: center
+.doorName
+  font-family: "Raleway", sans-serif
+  font-size: 32px
+  color: #000000B2
+.width
+  font-family: "Raleway", sans-serif
+  font-size: 20px
+  color: #000000B2
+.info
+  font-family: "Raleway", sans-serif
+  font-size: 19px
+  color: #000000B2
+.made
+  font-family: "Raleway", sans-serif
+  font-size: 19px
+  color: #000000B2
+.door__info
+  display: grid
+  grid-template-columns: repeat(1,4fr)
+  gap: 20px
