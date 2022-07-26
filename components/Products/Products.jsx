@@ -32,7 +32,7 @@ function Products() {
         <div className={styles.flex}>
           <h3 className={styles.doors__title}>Входные</h3>
           <div className={styles.doors}>
-            {doors?.map((door) => {
+            {doors.map((door) => {
               return (
                 <div key={door.id} className={styles.door}>
                   <div className={styles.door__image}>
