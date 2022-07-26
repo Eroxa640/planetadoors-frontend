@@ -30,9 +30,9 @@ function Products() {
           </p>
         </div>
         <div className={styles.flex}>
-          <button className={styles.doors__title}>Входные</button>
+          <h3 className={styles.doors__title}>Входные</h3>
           <div className={styles.doors}>
-            {doors.map((door) => {
+            {doors?.map((door) => {
               return (
                 <div key={door.id} className={styles.door}>
                   <div className={styles.door__image}>
@@ -48,7 +48,7 @@ function Products() {
                     </div>
                     <div className={styles.door__info}>
                       <h3 className={styles.doorName}>{door.name}</h3>
-                      <h3 className={styles.width}>Ширина: {door.height}м</h3>
+                      <h3 className={styles.height}>Высота: {door.height}м</h3>
                       <p className={styles.info}>{door.info}</p>
                       <h3 className={styles.made}>Сделано: {door.madein}</h3>
                     </div>
