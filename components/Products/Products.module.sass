@@ -34,8 +34,10 @@
   margin: 0 auto
   filter: blur(0)
   -webkit-filter: blur(0)
+  padding: 10px
   img
     height: 100%
+    width: 100%
 .doorName
   font-family: 'Roboto Slab'
   font-style: normal
@@ -69,7 +71,8 @@
   position: relative
   background-color: #FFED00
   cursor: pointer
-  transition: .4s
+  transition: 4s
+  max-width: 280px
   &:hover
     .door__image
       filter: blur(8px)
@@ -84,7 +87,7 @@
   left: 0
   padding: 15px
   opacity: 0
-  transition: .4s
+  transition: .6s
 .doors
   display: grid
   grid-template-columns: repeat(1, 3fr)
