@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.sass";
 import { Fade as Hamburger } from "hamburger-react";
-import Link from "next/Link";
+import Link from "next/link";
 import cn from "classnames";
 
 export default function Navbar() {
