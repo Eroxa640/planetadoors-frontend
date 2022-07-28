@@ -50,7 +50,9 @@ function Products() {
                       <h3 className={styles.doorName}>{door.name}</h3>
                       <p className={styles.info}>{door.info}</p>
                       <h3 className={styles.height}>Высота: {door.height}м</h3>
-                      <h3 className={styles.made}>Сделано: {door.madein}</h3>
+                      <h3 className={styles.made}>
+                        Производство: {door.madein}
+                      </h3>
                     </div>
                   </div>
                 </div>
