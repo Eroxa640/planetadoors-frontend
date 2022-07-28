@@ -11,6 +11,7 @@ export default function Home() {
         <meta name="description" content="main page planeta doors" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <script src="//code.jivosite.com/widget/A7IUO6jnwl" async></script>
       <HeadPage />
       <Products />
     </>
