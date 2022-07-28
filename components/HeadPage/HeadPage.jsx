@@ -4,7 +4,7 @@ import styles from "./HeadPage.module.sass";
 export default function HeadPage() {
   return (
     <div className={styles.slide}>
-      <div className="container">
+      <div className={`container ${styles.head__container}`}>
         <div className={styles.content}>
           <div className={styles.contentLogo__img}>
             <img src="/images/PLANETA_DOORS.png" alt="planeta_doors" />
