@@ -8,7 +8,7 @@ function Location({ width }) {
         <h3 className={styles.info__title}>Местоположение</h3>
         <p className={styles.info__description}>
           Наши местоположения расположены в очень удобных местах доступны всеми
-          транспортами{" "}
+          транспортами
         </p>
       </div>
       <iframe
