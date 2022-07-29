@@ -7,7 +7,7 @@ export default function HeadPage() {
       <div className={`container ${styles.head__container}`}>
         <div className={styles.content}>
           <div className={styles.contentLogo__img}>
-            <img src="/images/PLANETA_DOORS.png" alt="planeta_doors" />
+            <img src="/images/logo-svg.svg" alt="planeta_doors" />
           </div>
           <span className={styles.content__text}>
             Наслаждение в каждом моменте
