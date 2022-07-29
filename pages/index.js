@@ -1,11 +1,21 @@
 import Head from "next/head";
-import Contacts from "../components/Contacts/Contacts";
+import { useEffect, useState } from "react";
 import HeadPage from "../components/HeadPage/HeadPage";
-import Price from "../components/Price/Price";
+import Location from "../components/Location/Location";
 import Products from "../components/Products/Products";
 import styles from "../styles/Home.module.sass";
 
 export default function Home() {
+  const [screenWidth, setScreenWidth] = useState(null);
+  const handleWidth = () => {
+    const screenWidth = window.screen.width;
+    setScreenWidth(screenWidth);
+  };
+  useEffect(() => {
+    handleWidth();
+    window.addEventListener("resize", handleWidth);
+    return () => window.removeEventListener("resize", handleWidth);
+  }, []);
   return (
     <>
       <Head>
@@ -13,10 +23,10 @@ export default function Home() {
         <meta name="description" content="main page planeta doors" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <script src="//code.jivosite.com/widget/A7IUO6jnwl" async></script>
       <HeadPage />
       <Products />
-      <Price/>
-      <Contacts/>
+      <Location width={screenWidth} />
     </>
   );
 }

@@ -4,7 +4,7 @@
   height: calc( 100vh - 115px )
   display: flex
   flex-direction: column
-  justify-content: flex-start
+  justify-content: center
   align-items: center
   z-index: -1
 .slide__img
@@ -42,3 +42,18 @@
   font-weight: 700
   font-size: 14px
   color: #FFED00
+
+@media screen and (min-width: 600px)
+  .content
+    height: 250px
+@media screen and (min-width: 900px)
+  .content
+    height: 300px
+@media screen and (min-width: 1200px)
+  .contentLogo__img
+    width: 565px
+  .content
+    height: 425px
+    width: 1150px
+    margin: 0 auto
+    border-radius: 200px
