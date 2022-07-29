@@ -1,1 +1,116 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap')
+
+.container
+  width: calc( 100% - 50px )
+  margin: auto
+  // padding: 0 50px
+
+
+.title
+  max-width: 300px
+  font-size: 44px
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: bold
+  text-align: center
+  border-bottom: 3px solid #FFED00
+  margin: 50px auto
+
+  
+.block
+  display: flex
+  justify-content: space-evenly
+  margin: 100px auto
+
+.form
+  display: flex
+  flex-direction: column
+  align-items: center
+  max-width: 616px
+
+.name
+  width: 616px
+  height: 50px
+  font-size: 26px
+  font-display:'Source Sans Pro', sans-serif
+  border-radius: 50px 
+  color: #00000090
+  padding-left: 9px
+
+
+
+.email
+  width: 616px
+  height: 50px
+  font-size: 26px
+  font-display:'Source Sans Pro', sans-serif
+  border-radius: 50px 
+  color: #00000090
+  margin-top: 20px
+  padding-left: 9px
+
+
+.number
+  width: 616px
+  height: 50px
+  font-size: 26px
+  font-display:'Source Sans Pro', sans-serif
+  border-radius: 50px 
+  color: #00000090
+  margin-top: 20px
+  padding-left: 9px
+
+
+
+.text
+  width: 616px
+  height: 67px
+  font-size: 26px
+  font-display:'Source Sans Pro', sans-serif
+  color: #00000090
+  margin-top: 20px
+  padding-left: 9px
+
+
+.btn__contacts
+  padding: 20px 35px
+  font-display:'Source Sans Pro', sans-serif
+  color: #2459A9
+  font-size: 20px
+  font-weight: bold
+  background-color: #FFED00
+  margin-top: 20px
+
+
+@media screen and (max-width:1127px)
+  .block
+    flex-direction: column
+    align-items: center
+
+  .image
+    display: none
+
+@media screen and (max-width:626px)
+  .name,
+  .number,
+  .email,
+  .text
+    width: 400px
+
+  .btn__contacts
+    padding: 12px 27px
+    font-size: 15px
+
+@media screen and (max-width:426px)
+  .name,
+  .number,
+  .email,
+  .text
+    width:300px
+
+
+@media screen and (max-width:356px)
+  .name,
+  .number,
+  .email,
+  .text
+    width:240px
