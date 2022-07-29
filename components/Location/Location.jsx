@@ -22,7 +22,7 @@ function Location({ width }) {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-      <div className={`"container" + ${styles.container}`}>
+      <div className={`container ${styles.container}`}>
         <a
           className={styles.dg_widget_link}
           href="http://2gis.kg/bishkek/firm/70000001054886284/center/74.61663007736207,42.87459603035436/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
@@ -54,10 +54,6 @@ function Location({ width }) {
             Найти проезд до Planeta Doors, салон дверей
           </a>
         </div>
-        <noscript style={{ color: "#c00", fontSize: 16, fontWeight: "bold" }}>
-          Виджет карты использует JavaScript. Включите его в настройках вашего
-          браузера.
-        </noscript>
       </div>
     </>
   );

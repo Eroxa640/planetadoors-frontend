@@ -13,7 +13,7 @@ export default function Navbar() {
       <header className={styles.navbar}>
         <div className={`container ${styles.nav__container}`}>
           <div className={styles.logo}>
-            <img src="/images/PLANETA_DOORS.png" alt="Planeta_Doors" />
+            <img src="/images/logo-svg.svg" alt="Planeta_Doors" />
           </div>
           <nav
             className={cn(styles.nav, {
