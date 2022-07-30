@@ -6,6 +6,7 @@ import Products from "../components/Products/Products";
 import Price from "../components/Price/Price";
 import styles from "../styles/Home.module.sass";
 import Contacts from "../components/Contacts/Contacts";
+import Concurents from "../components/Concurents/Cancurents";
 
 export default function Home() {
   const [screenWidth, setScreenWidth] = useState(null);
@@ -34,6 +35,7 @@ export default function Home() {
       <Products />
       <Price />
       <Contacts />
+      <Concurents/>
       <Location width={screenWidth} />
     </>
   );

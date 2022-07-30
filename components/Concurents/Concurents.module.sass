@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap')
+
+.container
+  max-width: calc( 1500px - 50px )
+  margin: 0 auto
+
+.title
+  max-width: 300px
+  font-size: 44px
+  font-family: 'Source Sans Pro', sans-serif
+  font-weight: bold
+  text-align: center
+  border-bottom: 3px solid #FFED00
+  margin: 50px auto
+
+
+.cards
+  max-width: 250px
+  max-height: 250px
+  border: 1px solid 
+  border-radius: 150px
+  background-color: #FFDA79
+  border: none
+  margin: 0 auto
+
+.cards__indoor,
+.cards__deka
+  background-color: black
+
+.img
+  padding: 85px 10px
+
+.img__indoor
+  padding: 43px 43px
+
+.card
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  padding: 60px 0
+
+.img__dver
+  padding: 76px 5px
+  
+
+@media screen and (max-width:1118px)
+  .card
+    grid-template-columns: repeat(2, 1fr)
+    gap: 40px
+    max-width: 800px
+    margin: 0 auto
+
+
+@media screen and (max-width:1118px)
+  .card
+    grid-template-columns: 1fr
+    gap: 40px
+    max-width: 400px
+    margin: 0 auto
