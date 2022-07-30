@@ -18,19 +18,19 @@ export default function Concurents() {
         </Link>
         <Link href="/">
           <div className={`${styles.cards} ${styles.cards__indoor}`}>
-            <img className={styles.img} src="images/estet-image.png" alt="" />
+            <img className={styles.img} src="images/estet-svg.svg" alt="" />
           </div>
         </Link>
         <Link href="/">
           <div className={`${styles.cards} ${styles.cards__deka}`}>
-            <img className={styles.img} src="images/deka-image.png" alt="" />
+            <img className={styles.img} src="images/deka-ural-svg.svg" alt="" />
           </div>
         </Link>
         <Link href="/">
           <div className={styles.cards}>
             <img
               className={`${styles.img} ${styles.img__indoor}`}
-              src="images/indoor-image.png"
+              src="images/indoor-svg.svg"
               alt=""
             />
           </div>
