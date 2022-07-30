@@ -1,21 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap')
-
 .container
   width: calc( 100% - 50px )
   margin: auto
-  // padding: 0 50px
-
 
 .title
-  max-width: 300px
-  font-size: 44px
+  max-width: 150px
+  font-size: 30px
   font-family: 'Source Sans Pro', sans-serif
   font-weight: bold
   text-align: center
-  border-bottom: 3px solid #FFED00
+  border-bottom: 4px solid #FFED00
   margin: 50px auto
 
-  
 .block
   display: flex
   justify-content: space-evenly
@@ -31,63 +26,86 @@
   width: 616px
   height: 50px
   font-size: 26px
-  font-display:'Source Sans Pro', sans-serif
-  border-radius: 50px 
+  font-family: 'Roboto Slab', sans-serif
+  border-radius: 50px
   color: #00000090
   padding-left: 9px
   border: none
-  border: 1px solid #FFED00
-
+  border: 2px solid #FFED00
+  background-color: #D9D9D9
+  &::placeholder
+    font-weight: 400
+    font-size: 26px
+    line-height: 33px
+    margin-left: 10px
+    border-radius: 50px
 
 .email
   width: 616px
   height: 50px
   font-size: 26px
-  font-display:'Source Sans Pro', sans-serif
-  border-radius: 50px 
+  font-family: 'Roboto Slab', sans-serif
+  border-radius: 50px
   color: #00000090
   margin-top: 20px
   padding-left: 9px
   border: none
-  border: 1px solid #FFED00
-
+  border: 2px solid #FFED00
+  background-color: #D9D9D9
+  &::placeholder
+    font-style: normal
+    font-weight: 400
+    font-size: 26px
+    line-height: 33px
 
 .number
   width: 616px
   height: 50px
   font-size: 26px
-  font-display:'Source Sans Pro', sans-serif
-  border-radius: 50px 
+  font-family: 'Roboto Slab', sans-serif
+  border-radius: 50px
   color: #00000090
   margin-top: 20px
   padding-left: 9px
   border: none
-  border: 1px solid #FFED00
-
-
+  border: 2px solid #FFED00
+  background-color: #D9D9D9
+  &::placeholder
+    font-style: normal
+    font-weight: 400
+    font-size: 26px
+    line-height: 33px
 
 .text
-  width: 616px
+  width: 610px
   height: 67px
   font-size: 26px
-  font-display:'Source Sans Pro', sans-serif
+  font-family: 'Roboto Slab', sans-serif
   color: #00000090
   margin-top: 20px
   resize: none
   border: none
-  border: 1px solid #FFED00
+  border: 2px solid #FFED00
   padding-top: 18px
+  border-radius: 7px
+  background-color: #D9D9D9
+  &::placeholder
+    font-style: normal
+    font-weight: 400
+    font-size: 26px
+    line-height: 33px
 
 .btn__contacts
   padding: 20px 35px
-  font-display:'Source Sans Pro', sans-serif
+  font-family: 'Roboto Slab', sans-serif
   color: #2459A9
   font-size: 20px
   font-weight: bold
   background-color: #FFED00
   margin-top: 20px
   border: none
-
+  border-radius: 5px
+  cursor: pointer
 
 @media screen and (max-width:1127px)
   .block
@@ -107,23 +125,25 @@
   .btn__contacts
     padding: 12px 27px
     font-size: 15px
+  .block
+    margin: 50px auto
 
 @media screen and (max-width:426px)
   .name,
   .number,
   .email,
   .text
-    width:300px
-      font-size: 10px
-
-
+    width: 300px
+    font-size: 16px
+    border: 2px solid #FFED00
+    &::placeholder
+      font-size: 15px
 @media screen and (max-width:336px)
   .name,
   .number,
   .email,
   .text
-    width:300px
+    width: 300px
 
   .text
-    width:300px
-
+    width: 300px

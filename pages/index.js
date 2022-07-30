@@ -34,9 +34,9 @@ export default function Home() {
       <HeadPage />
       <Products />
       <Price />
-      <Contacts />
-      <Concurents/>
       <Location width={screenWidth} />
+      <Contacts />
+      <Concurents />
     </>
   );
 }

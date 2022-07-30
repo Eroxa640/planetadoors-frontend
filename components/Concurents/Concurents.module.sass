@@ -5,23 +5,24 @@
   margin: 0 auto
 
 .title
-  max-width: 300px
-  font-size: 44px
+  max-width: 170px
+  font-size: 30px
   font-family: 'Source Sans Pro', sans-serif
   font-weight: bold
   text-align: center
   border-bottom: 3px solid #FFED00
-  margin: 50px auto
-
+  cursor: pointer
+  margin: 50px auto 0
 
 .cards
   max-width: 250px
   max-height: 250px
-  border: 1px solid 
+  border: 1px solid
   border-radius: 150px
   background-color: #FFDA79
   border: none
   margin: 0 auto
+  cursor: pointer
 
 .cards__indoor,
 .cards__deka
@@ -40,7 +41,6 @@
 
 .img__dver
   padding: 76px 5px
-  
 
 @media screen and (max-width:1118px)
   .card
@@ -49,8 +49,9 @@
     max-width: 800px
     margin: 0 auto
 
-
-@media screen and (max-width:1118px)
+@media screen and (max-width:600px)
+  // .title
+  //   margin: 0 auto
   .card
     grid-template-columns: 1fr
     gap: 40px
