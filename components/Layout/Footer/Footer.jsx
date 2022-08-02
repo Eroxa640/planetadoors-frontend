@@ -76,7 +76,7 @@ function Footer() {
           <div className={styles.network}>
             <p className={styles.name}>ОсОО «КЕНДАЛА Кейджи»</p>
             <div className={styles.socials}>
-              <Link href="/">
+              <Link href="https://instagram.com/planeta_doors.kg?igshid=YmMyMTA2M2Y=">
                 <img src="images/instagram-icon.svg" alt="Instagram" />
               </Link>
               <Link href="/">

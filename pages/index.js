@@ -23,12 +23,25 @@ export default function Home() {
     <>
       <Head>
         <title>Главная</title>
-        <meta name="description" content="main page planeta doors" />
+        <meta name="title" content="Ислам Курулуш - строительная компания" />
+        <meta
+          name="description"
+          content="Мы держим низкие цены как оптом так и в розницу
+Многие из наших конкурентов завышают цены на двери, но из-за того что мы ценим чужой труд, у нас цены на своем уровне"
+        />
+        <meta
+          name="keywords"
+          content="Planeta Doors, Двери, Межкомнатные двери, входные двери, двери бишкек, куплю двери, Планета дуурс"
+        />
+        <meta
+          name="robots"
+          content="Planeta Doors, Двери, Межкомнатные двери, входные двери, двери бишкек, куплю двери, Планета дуурс"
+        />
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=0"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="images/\favicon.ico" />
       </Head>
       <script src="//code.jivosite.com/widget/A7IUO6jnwl" async></script>
       <HeadPage />
