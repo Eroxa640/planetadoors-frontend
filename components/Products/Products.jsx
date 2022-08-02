@@ -97,7 +97,10 @@ function Products() {
                   </div>
                   <div className={styles.door__info}>
                     <h3 className={styles.doorName}>карина</h3>
-                    <p className={styles.info}>карина</p>
+                    <p className={styles.info}>
+                      Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
+                      Толщина: 40 мм; Цвет: венге;
+                    </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
@@ -117,7 +120,10 @@ function Products() {
                   </div>
                   <div className={styles.door__info}>
                     <h3 className={styles.doorName}>карина</h3>
-                    <p className={styles.info}>карина</p>
+                    <p className={styles.info}>
+                      Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
+                      Толщина: 40 мм; Цвет: венге;
+                    </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
@@ -137,7 +143,10 @@ function Products() {
                   </div>
                   <div className={styles.door__info}>
                     <h3 className={styles.doorName}>карина</h3>
-                    <p className={styles.info}>карина</p>
+                    <p className={styles.info}>
+                      Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
+                      Толщина: 40 мм; Цвет: венге;
+                    </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
@@ -196,7 +205,10 @@ function Products() {
                   </div>
                   <div className={styles.door__info}>
                     <h3 className={styles.doorName}>карина</h3>
-                    <p className={styles.info}>карина</p>
+                    <p className={styles.info}>
+                      Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
+                      Толщина: 40 мм; Цвет: венге;
+                    </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
@@ -216,7 +228,10 @@ function Products() {
                   </div>
                   <div className={styles.door__info}>
                     <h3 className={styles.doorName}>карина</h3>
-                    <p className={styles.info}>карина</p>
+                    <p className={styles.info}>
+                      Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
+                      Толщина: 40 мм; Цвет: венге;
+                    </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
@@ -236,7 +251,10 @@ function Products() {
                   </div>
                   <div className={styles.door__info}>
                     <h3 className={styles.doorName}>карина</h3>
-                    <p className={styles.info}>карина</p>
+                    <p className={styles.info}>
+                      Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
+                      Толщина: 40 мм; Цвет: венге;
+                    </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
