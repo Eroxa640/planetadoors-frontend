@@ -5,7 +5,7 @@
   max-width: 1300px
   margin: 0 auto
   display: grid
-  grid-template-columns: repeat(4, 1fr)
+  grid-template-columns: repeat(2, 1fr)
   gap: 70px
 .title
   font-family: 'Source Sans Pro', sans-serif
@@ -37,6 +37,7 @@
   line-height: 27px
   color: rgba(0, 0, 0, 0.7)
   margin-left: 10px
+  width: 250px
 .network
   display: flex
   justify-content: space-between
@@ -57,3 +58,57 @@
   font-size: 20px
   line-height: 24px
   color: rgba(0, 0, 0, 0.7)
+.flex
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 200px
+@media screen and ( max-width: 1270px )
+  .flex
+    gap: 150px
+@media screen and ( max-width: 1160px )
+  .flex
+    gap: 100px
+@media screen and ( max-width: 1060px )
+  .flex
+    gap: 70px
+@media screen and ( max-width: 1000px )
+  .flex
+    gap: 40px
+@media screen and ( max-width: 935px )
+  .footer__info
+    grid-template-columns: repeat(1, 2fr)
+  .logo
+    max-width: 228px
+    margin: 0 auto
+@media screen and ( max-width: 640px )
+  // .flex
+  //   grid-template-columns: repeat(1, 3fr)
+  .title
+    font-size: 16px
+  .parag
+    font-size: 15px
+  .contact__title
+    font-size: 15px
+@media screen and ( max-width: 490px )
+  .flex
+    grid-template-columns: repeat(1, 3fr)
+  .footer__info
+    gap: 40px
+  .products
+    gap: 10px
+  .title
+    font-size: 18px
+  .parag
+    font-size: 18px
+  .contact__title
+    font-size: 18px
+  .footer
+    padding: 40px 0
+  .name
+    font-size: 16px
+  .network
+    flex-direction: column
+  .socials
+    margin-top: 20px
+  .hr
+    margin-top: 30px
