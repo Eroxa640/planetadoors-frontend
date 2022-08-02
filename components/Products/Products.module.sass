@@ -1,3 +1,4 @@
+
 .products__title
   font-family: 'Source Sans Pro', sans-serif
   font-style: normal
@@ -29,7 +30,33 @@
   max-width: max-content
   margin: 10px auto 10px
   cursor: pointer
-
+.interior__title,
+.entranceDoors__title
+  font-size: 18px
+  font-family: "Roboto Slab", sans-serif
+  font-weight: 400
+  border-bottom: 2px solid #FFED00
+  margin-bottom: 15px
+  padding-bottom: 5px
+  cursor: pointer
+.entranceDoors__title
+  margin-top: 25px
+.center__title
+  text-align: center
+  transition: .2s all
+.entranceDoors,
+.interior
+  position: relative
+  overflow: hidden
+  transition: .3s
+  margin: 20px 0
+.door__list
+  width: 100%
+  display: flex
+  flex-direction: column
+  position: absolute
+.visible
+  padding-bottom: 1010px
 .door__image
   max-width: max-content
   height: 320px
@@ -80,28 +107,25 @@
   gap: 50px
   margin: 0 auto
   transform: translateY(0)
-.door
+.door__image
+  transition: .3s filter linear
+
+.door__item
   position: relative
   background-color: #FFED00
   cursor: pointer
-  transition: 4s
+  transition: .2s
+  margin-bottom: 15px
   &:hover
+    background-color: #888888
     .door__image
       filter: blur(8px)
       -webkit-filter: blur(8px)
+
     .doorInfo
       opacity: 1
-.door2
-  position: relative
+.blueBack
   background-color: #4D69BF
-  cursor: pointer
-  transition: 4s
-  &:hover
-    .door__image
-      filter: blur(8px)
-      -webkit-filter: blur(8px)
-    .doorInfo
-      opacity: 1
 
 .doorInfo
   text-align: center
@@ -116,11 +140,15 @@
   display: grid
   gap: 10px
 
-@media screen and ( min-width: 768px )
-  .doors
-    grid-template-columns: repeat(3, 1fr)
+@media screen and ( min-width: 870px )
+  .visible
+    padding-bottom: 300px
+  .door__list
+    display: flex
+    flex-direction: row
+    justify-content: space-between
   .door__image
-    height: 251px
+    height: 260px
   .doorName
     font-size: 23px
     line-height: 25px
@@ -145,17 +173,16 @@
     font-size: 30px
   .doors__title
     font-size: 20px
-@media screen and ( min-width: 1100px )
-  .doors
-    gap: 76px
-  .door
-    height: 486px
-  .door2
-    height: 486px
+@media screen and ( min-width: 966px )
   .door__image
-    height: 450px
+    height: 290px
+@media screen and ( min-width: 1100px )
+  .visible
+    padding-bottom: 360px
+  .door__image
+    height: 340px
   .logo
-    width: 273px
+    width: 240px
   .doorName
     font-size: 32px
     line-height: 53px
@@ -168,7 +195,23 @@
   .made
     font-size: 20px
     line-height: 100%
-  .door__info
-    display: grid
-    grid-template-columns: repeat(1, 4fr)
-    gap: 30px
+@media screen and ( min-width: 1300px )
+  .door__image
+    height: 400px
+  .visible
+    padding-bottom: 410px
+@media screen and ( min-width: 1500px )
+  .door__image
+    height: 460px
+  .visible
+    padding-bottom: 470px
+@media screen and ( min-width: 1700px )
+  .door__image
+    height: 500px
+  .visible
+    padding-bottom: 510px
+@media screen and ( min-width: 1900px )
+  .door__image
+    height: 560px
+  .visible
+    padding-bottom: 570px
