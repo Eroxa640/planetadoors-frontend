@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Location.module.sass";
 
-function Location({ width }) {
+function Location() {
   return (
     <>
       <div className="container">
@@ -13,15 +13,12 @@ function Location({ width }) {
           </p>
         </div>
       </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2920.941653064124!2d74.62148491473971!3d42.937356906441806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb9e2b99cc43f%3A0x13b0c42285a36994!2z0JHQuNC30L3QtdGBLdCm0LXQvdGC0YAgItCQ0KHQnNCQ0J0i!5e0!3m2!1sru!2skg!4v1659006057809!5m2!1sru!2skg"
-        width={width}
-        height="400"
-        style={{ border: "0" }}
-        // allowfullscreen="true"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A360ec0f26e5201a2534c2455d41ede473a271c77343f2ef06323aa2852fb3c79&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
       <div className={`container ${styles.container}`}>
         <a
           className={styles.dg_widget_link}
