@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import HeadPage from "../components/HeadPage/HeadPage";
 import Location from "../components/Location/Location";
 import Products from "../components/Products/Products";
@@ -9,16 +8,6 @@ import Contacts from "../components/Contacts/Contacts";
 import Concurents from "../components/Concurents/Cancurents";
 
 export default function Home() {
-  const [screenWidth, setScreenWidth] = useState(null);
-  const handleWidth = () => {
-    const screenWidth = window.screen.width;
-    setScreenWidth(screenWidth);
-  };
-  useEffect(() => {
-    handleWidth();
-    window.addEventListener("resize", handleWidth);
-    return () => window.removeEventListener("resize", handleWidth);
-  }, []);
   return (
     <>
       <Head>
@@ -47,7 +36,7 @@ export default function Home() {
       <HeadPage />
       <Products />
       <Price />
-      <Location width={screenWidth} />
+      <Location />
       <Contacts />
       <Concurents />
     </>
