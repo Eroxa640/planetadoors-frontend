@@ -33,8 +33,8 @@ function Products() {
   //   }
   //   setOpenInteriorDoor(!OpenInteriorDoor);
   // };
+  const [entranceDoorsVisible, setEntranceDoorsVisible] = useState(true);
   const [interiorVisible, setInteriorVisible] = useState(false);
-  const [entranceDoorsVisible, setEntranceDoorsVisible] = useState(false);
   return (
     <div className="container">
       <div className={styles.products__titles}>

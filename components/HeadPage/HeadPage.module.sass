@@ -43,17 +43,39 @@
   font-size: 14px
   color: #FFED00
 
+@media screen and (max-height: 400px)
+  .slide
+    height: 450px
 @media screen and (min-width: 600px)
   .content
     height: 250px
+  @media screen and (max-height: 500px)
+    .slide
+      height: 500px
 @media screen and (min-width: 900px)
   .content
     height: 300px
 @media screen and (min-width: 1200px)
   .contentLogo__img
-    width: 565px
+    width: 450px
   .content
-    height: 425px
-    width: 1150px
+    height: 350px
+    width: 990px
     margin: 0 auto
     border-radius: 200px
+  @media screen and (max-height: 650px)
+    .slide
+      height: 600px
+@media screen and (min-width: 1500px)
+  .content
+    height: 400px
+  @media screen and (max-height: 700px)
+    .slide
+      height: 650px
+@media screen and (min-width: 1900px)
+  .content
+    height: 400px
+    width: 1150px
+  @media screen and (max-height: 800px)
+    .slide
+      height: 800px
