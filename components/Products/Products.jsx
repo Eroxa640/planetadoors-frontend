@@ -36,7 +36,7 @@ function Products() {
   const [entranceDoorsVisible, setEntranceDoorsVisible] = useState(true);
   const [interiorVisible, setInteriorVisible] = useState(false);
   return (
-    <div className="container">
+    <div className={`container ${styles.products__container}`}>
       <div className={styles.products__titles}>
         <h3 className={styles.products__title}>Наши товары</h3>
         <p className={styles.products__description}>
@@ -52,9 +52,7 @@ function Products() {
             (entranceDoorsVisible) => !entranceDoorsVisible
           )
         }
-        className={cn(styles.entranceDoors__title, {
-          [styles.center__title]: entranceDoorsVisible,
-        })}
+        className={styles.entranceDoors__title}
       >
         Входные
       </h3>
@@ -95,16 +93,19 @@ function Products() {
                   <div className={styles.logo}>
                     <img src="images/PLANETA_DOORS.png" alt="logo" />
                   </div>
-                  <div className={styles.door__info}>
+                  <div className={styles.doorInfo__text}>
                     <h3 className={styles.doorName}>карина</h3>
                     <p className={styles.info}>
                       Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
                       Толщина: 40 мм; Цвет: венге;
                     </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
+                  </div>
+                  <div>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
                 </div>
+                <div className={styles.filterBlock}></div>
               </div>
               <div className={styles.door__item}>
                 <div className={styles.door__image}>
@@ -118,16 +119,19 @@ function Products() {
                   <div className={styles.logo}>
                     <img src="images/PLANETA_DOORS.png" alt="logo" />
                   </div>
-                  <div className={styles.door__info}>
+                  <div className={styles.doorInfo__text}>
                     <h3 className={styles.doorName}>карина</h3>
                     <p className={styles.info}>
                       Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
                       Толщина: 40 мм; Цвет: венге;
                     </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
+                  </div>
+                  <div>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
                 </div>
+                <div className={styles.filterBlock}></div>
               </div>
               <div className={styles.door__item}>
                 <div className={styles.door__image}>
@@ -141,16 +145,19 @@ function Products() {
                   <div className={styles.logo}>
                     <img src="images/PLANETA_DOORS.png" alt="logo" />
                   </div>
-                  <div className={styles.door__info}>
+                  <div className={styles.doorInfo__text}>
                     <h3 className={styles.doorName}>карина</h3>
                     <p className={styles.info}>
                       Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
                       Толщина: 40 мм; Цвет: венге;
                     </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
+                  </div>
+                  <div>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
                 </div>
+                <div className={styles.filterBlock}></div>
               </div>
             </motion.div>
           )}
@@ -160,9 +167,7 @@ function Products() {
         onClick={() =>
           setInteriorVisible((interiorVisible) => !interiorVisible)
         }
-        className={cn(styles.interior__title, {
-          [styles.center__title]: interiorVisible,
-        })}
+        className={styles.interior__title}
       >
         Межкомнатные
       </h3>
@@ -203,16 +208,19 @@ function Products() {
                   <div className={styles.logo}>
                     <img src="images/PLANETA_DOORS.png" alt="logo" />
                   </div>
-                  <div className={styles.door__info}>
+                  <div className={styles.doorInfo__text}>
                     <h3 className={styles.doorName}>карина</h3>
                     <p className={styles.info}>
                       Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
                       Толщина: 40 мм; Цвет: венге;
                     </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
+                  </div>
+                  <div>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
                 </div>
+                <div className={styles.filterBlock}></div>
               </div>
               <div className={`${styles.door__item} ${styles.blueBack}`}>
                 <div className={styles.door__image}>
@@ -226,16 +234,19 @@ function Products() {
                   <div className={styles.logo}>
                     <img src="images/PLANETA_DOORS.png" alt="logo" />
                   </div>
-                  <div className={styles.door__info}>
+                  <div className={styles.doorInfo__text}>
                     <h3 className={styles.doorName}>карина</h3>
                     <p className={styles.info}>
                       Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
                       Толщина: 40 мм; Цвет: венге;
                     </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
+                  </div>
+                  <div>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
                 </div>
+                <div className={styles.filterBlock}></div>
               </div>
               <div className={`${styles.door__item} ${styles.blueBack}`}>
                 <div className={styles.door__image}>
@@ -249,21 +260,25 @@ function Products() {
                   <div className={styles.logo}>
                     <img src="images/PLANETA_DOORS.png" alt="logo" />
                   </div>
-                  <div className={styles.door__info}>
+                  <div className={styles.doorInfo__text}>
                     <h3 className={styles.doorName}>карина</h3>
                     <p className={styles.info}>
                       Тип: дверное полотно; Высота: 2000 мм; Ширина: 700 мм;
                       Толщина: 40 мм; Цвет: венге;
                     </p>
                     <h3 className={styles.height}>Высота: каринам</h3>
+                  </div>
+                  <div>
                     <h3 className={styles.made}>Производство: карина</h3>
                   </div>
                 </div>
+                <div className={styles.filterBlock}></div>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
       </div>
+      <button className={styles.allDoors__btn}>Все ассортименты</button>
     </div>
   );
 }

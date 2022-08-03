@@ -1,4 +1,5 @@
-
+.products__container
+  margin: 15px auto 100px
 .products__title
   font-family: 'Roboto Slab', sans-serif
   font-style: normal
@@ -9,7 +10,10 @@
   color: #000000
   border-bottom: 3px solid #FFED00
   max-width: max-content
-  margin: 38px auto 20px
+  margin: 40px auto 20px
+  padding: 0 10px 10px
+.products__titles
+  margin-bottom: 25px
 .products__description
   font-family: 'Source Sans Pro', sans-serif
   font-style: normal
@@ -32,24 +36,20 @@
   cursor: pointer
 .interior__title,
 .entranceDoors__title
-  font-size: 18px
+  font-size: 20px
   font-family: "Roboto Slab", sans-serif
   font-weight: 400
   border-bottom: 2px solid #FFED00
   margin-bottom: 15px
   padding-bottom: 5px
   cursor: pointer
-.entranceDoors__title
-  margin-top: 25px
-.center__title
-  text-align: center
-  transition: .2s all
+  transition: 1s
 .entranceDoors,
 .interior
   position: relative
   overflow: hidden
   transition: .3s
-  margin: 20px 0
+  margin: 10px 0
 .door__list
   width: 100%
   display: flex
@@ -67,13 +67,13 @@
   img
     height: 100%
     width: 100%
+    object-fit: contain
 .doorName
   font-family: 'Roboto Slab'
   font-style: normal
   font-weight: 400
-  font-size: 27px
-  line-height: 36px
-  color: white
+  font-size: 24px
+  color: rgba(0, 0, 0, 0.8)
 .logo
   width: 200px
   img
@@ -84,31 +84,22 @@
   font-style: normal
   font-weight: 300
   font-size: 16px
-  line-height: 21px
-  color: white
+  color: rgba(0, 0, 0, 0.8)
 .info
   font-family: 'Roboto Slab'
   font-style: normal
   font-weight: 300
   font-size: 16px
-  line-height: 21px
-  color: white
+  color: rgba(0, 0, 0, 0.8)
   text-align: left
 .made
   font-family: 'Roboto Slab'
   font-style: normal
   font-weight: 400
   font-size: 18px
-  line-height: 30px
-  color: white
-.doors
-  display: grid
-  grid-template-columns: repeat(1, 3fr)
-  gap: 50px
-  margin: 0 auto
-  transform: translateY(0)
+  color: rgba(0, 0, 0, 0.8)
 .door__image
-  transition: .3s filter linear
+  transition: .3s
 
 .door__item
   position: relative
@@ -116,50 +107,78 @@
   cursor: pointer
   transition: .2s
   margin-bottom: 15px
+  z-index: 9
   &:hover
-    background-color: #888888
     .door__image
-      filter: blur(8px)
-      -webkit-filter: blur(8px)
-
+      filter: blur(10px)
+      -webkit-filter: blur(10px)
     .doorInfo
       opacity: 1
+    .filterBlock
+      opacity: 1
+.filterBlock
+  background-color: rgba(217, 217, 217, 0.5)
+  position: absolute
+  top: 0
+  left: 0
+  transition: .3s
+  width: 100%
+  height: 100%
+  z-index: 10
+  opacity: 0
 .blueBack
   background-color: #4D69BF
 
 .doorInfo
-  text-align: center
   position: absolute
   top: 0
   left: 0
-  padding: 15px
+  width: 100%
+  height: 100%
+  padding: 15px 15px 40px 15px
   opacity: 0
-  transition: .6s
-.door__info
-  text-align: left
-  display: grid
-  gap: 10px
-
+  z-index: 11
+  transition: .4s
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+.doorInfo__text
+  max-width: 60%
+.allDoors__btn
+  display: block
+  font-size: 14px
+  font-weight: 400
+  font-family: "Roboto Slab", sans-serif
+  color: #1C1C33
+  background-color: #FFED00
+  text-transform: uppercase
+  border: none
+  border-radius: 4px
+  padding: 16px
+  margin: 35px auto 0
+  cursor: pointer
 @media screen and ( min-width: 870px )
+  .interior__title,
+  .entranceDoors__title
+    font-size: 22px
+  .doorInfo__text
+    max-width: 100%
   .visible
     padding-bottom: 300px
   .door__list
-    display: flex
-    flex-direction: row
-    justify-content: space-between
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    gap: 35px
   .door__image
     height: 260px
   .doorName
-    font-size: 23px
-    line-height: 25px
+    font-size: 24px
   .height
-    line-height: 15px
   .info
     font-size: 14px
-    line-height: 15px
   .made
-    line-height: 15px
-    font-size: 15px
+    font-size: 14px
   .logo
     width: 150px
     img
@@ -174,56 +193,57 @@
   .doors__title
     font-size: 20px
 @media screen and ( min-width: 966px )
+  .interior__title,
+  .entranceDoors__title
+    font-size: 24px
   .door__image
     height: 290px
 @media screen and ( min-width: 1100px )
   .visible
-    padding-bottom: 360px
+    padding-bottom: 370px
   .door__image
-    height: 340px
+    height: 360px
   .logo
     width: 240px
   .doorName
-    font-size: 32px
-    line-height: 53px
+    font-size: 26px
   .info
-    font-size: 22px
-    line-height: 38px
+    font-size: 18px
   .height
-    font-size: 20px
-    line-height: 100%
+    font-size: 18px
   .made
     font-size: 20px
     line-height: 100%
 @media screen and ( min-width: 1300px )
-  .door__image
-    height: 400px
-  .visible
-    padding-bottom: 410px
-@media screen and ( min-width: 1500px )
-  .doorName
-    font-size: 35px
-  .made
-    font-size: 25px
-  .height
-    font-size: 25px
-  .info
+  .interior__title,
+  .entranceDoors__title
     font-size: 26px
-  .door__info
-    gap: 25px
+  .doorName
+    font-size: 28px
+  .made
+    font-size: 22px
+  .height
+    font-size: 20px
+  .info
+    font-size: 20px
   .door__image
     height: 460px
   .visible
     padding-bottom: 470px
+@media screen and ( min-width: 1500px )
+  .door__info
+    gap: 25px
+  .visible
+    padding-bottom: 470px
 @media screen and ( min-width: 1700px )
   .doorName
-    font-size: 39px
+    font-size: 32px
   .made
-    font-size: 29px
+    font-size: 26px
   .height
-    font-size: 29px
+    font-size: 24px
   .info
-    font-size: 30px
+    font-size: 24px
   .door__info
     gap: 30px
   .door__image
@@ -231,14 +251,17 @@
   .visible
     padding-bottom: 510px
 @media screen and ( min-width: 1900px )
+  .interior__title,
+  .entranceDoors__title
+    font-size: 28px
   .doorName
-    font-size: 45px
+    font-size: 38px
   .made
-    font-size: 33px
+    font-size: 32px
   .height
-    font-size: 33px
+    font-size: 30px
   .info
-    font-size: 34px
+    font-size: 30px
   .door__info
     gap: 40px
   .door__image

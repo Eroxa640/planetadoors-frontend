@@ -8,7 +8,8 @@ export default function Price() {
         <div className={styles.block}>
           <div className={styles.info}>
             <div className={styles.price__title}>
-              Мы держим низкие цены как оптом так и в розницу
+              Мы держим низкие цены как
+              <span className="d-block">оптом так и в розницу</span>
             </div>
             <div className={styles.price__des}>
               Многие из наших конкурентов завышают цены на двери, но из-за того
